@@ -1,61 +1,48 @@
-# 🛍️ Product Review Generator using GPT & Streamlit
+# Product Review Generator
 
-A simple **AI-powered product review generator** built with **Streamlit** and **OpenAI GPT API**.  
-Users can input product details and instantly get a **personalized, human-like product review**.
+## Overview
+The **Product Review Generator** is a Streamlit-based application that uses GPT to automatically generate product reviews for e-commerce products based on user input. It allows users to customize tone, length, and style of reviews.
 
----
+## Features
+- Generate AI-based product reviews.
+- Choose tone: Positive, Neutral, Negative.
+- Choose review length: Short, Medium, Long.
+- Supports text preprocessing (NLTK).
+- Interactive web interface via Streamlit.
 
-## 🚀 Features
-- 📄 Generate realistic product reviews using GPT
-- 🎛 Adjustable tone and length (optional)
-- ⚡ Instant output in a clean Streamlit UI
-- ☁️ Deployable on Streamlit Cloud / Hugging Face Spaces
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd <project-folder>
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
----
+## Usage
+1. Run the app:
+   ```bash
+   streamlit run app.py
+   ```
+2. Open the URL displayed in the terminal (usually http://localhost:8501).
 
-## 📦 Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+## Project Structure
+```
+├── app.py               # Main Streamlit application
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
 ```
 
-2. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
+## Dependencies
+- Python 3.10+
+- Streamlit
+- OpenAI API
+- NLTK
 
-3. **Set your OpenAI API key**
-```bash
-export OPENAI_API_KEY="your_api_key_here"
-```
-*(On Windows PowerShell use: `setx OPENAI_API_KEY "your_api_key_here"`)*
-  
-4. **Run the app**
-```bash
-streamlit run app.py
-```
-
----
-
-## 🛠 Deployment
-### **Streamlit Cloud**
-1. Push your code to GitHub
-2. Go to [Streamlit Cloud](https://share.streamlit.io/)
-3. Connect your GitHub repo
-4. Set the **OPENAI_API_KEY** in Secrets Manager
-
----
-
-## 📂 Project Structure
-```
-├── app.py              # Main Streamlit application
-├── requirements.txt    # Python dependencies
-├── README.md           # Project documentation
-```
-
----
-
-## 📜 License
+## License
 This project is licensed under the MIT License.
